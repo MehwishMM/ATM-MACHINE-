@@ -1,0 +1,18 @@
+{
+  "name": "atm",
+  "version": "1.0.0",
+  "description": "It is a cli project with using inquirer,typescript,node-js,chalk",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mehwish mazari",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.17"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
