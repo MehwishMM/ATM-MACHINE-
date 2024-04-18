@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+
 import chalk from "chalk"; // call chalk
 import inquirer from "inquirer"; // call inquirer
 let mybalance = 10000;
