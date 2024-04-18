@@ -46,7 +46,7 @@ if (code.pincode === pin){
    name:"operation",
    message:"select your transaction",
    type:"list",
-   choices:["withdrawl","checkbalance"],
+   choices:["Withdrawl","Checkbalance","Fast Cash"],
    }]);
    if (operationAns.operation === "withdrawl"){
    let withdrawl =await inquirer.prompt ([
@@ -64,17 +64,59 @@ if (code.pincode === pin){
     console.log(`your remaining balance is ${mybalance}`);
    
 
-     }else if (operationAns.operation === "checkbalance"){
+     }else if (operationAns.operation === "Checkbalance"){
    console.log(`your current balance is ${mybalance}`);
    }
+   else if (operationAns.operation === "Fast Cash")  
+   {
+    let askFastCash =await inquirer .prompt([{
+
+     message:"Enter Amount",
+      type:   "list",
+      choices:["1000","500","5000"], 
+      name:  "fastCash",
+    },  
+     ]); 
+    if (askFastCash.fastCash==="1000") 
+      {
+        if (mybalance>=1000)  
+      {
+     console.log(chalk.green(`now your balance is $${mybalance -1000}`));
+   } 
+    else
+   {
+     console.log (chalk.red("insufficient balance"));
+   }  
   
 }
+   else if (askFastCash.fastCash==="500" )
+  {
+    if (mybalance >=500)
+   
+  {
+    console.log(chalk.green(`now your balance is $${mybalance-500}`));
+  }
+  else
+  {
+   console.log(chalk.red("insufficient balance")); 
+  }
+
+  }  
+  else if (askFastCash.fastCash ==="5000")
+  
+    if(mybalance >=5000)
+
+  {
+   console.log(chalk.green(`now your balance is $${mybalance-5000}`)); 
+
+  }  
 
 else{ 
      console.log (chalk.red.bold("your pin code is in correct"));
 };
 console.log(chalk.red.italic("Thank you"));
-
+   }
+  };
 
 
 
