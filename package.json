@@ -4,6 +4,7 @@
   "description": "It is a cli project with using inquirer,typescript,node-js,chalk",
   "main": "index",
   "type": "module",
+   "bin":"index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
