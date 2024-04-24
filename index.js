@@ -42,7 +42,7 @@ if (code.pincode === pin) {
             name: "operation",
             message: "select your transaction",
             type: "list",
-            choices: ["Withdrawl", "Checkbalance", "Fast Cash"],
+            choices: ["withdrawl", "Checkbalance", "Fast Cash"],
         }
     ]);
     if (operationAns.operation === "withdrawl") {
