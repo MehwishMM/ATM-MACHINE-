@@ -1,6 +1,6 @@
 {
   "name": "gg-atm",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "It is a cli project with using inquirer,typescript,node-js,chalk",
   "main": "index",
   "type": "module",
